@@ -3,7 +3,7 @@ function Home() {
     <div className="d-flex flex-column vh-100 justify-content-center align-items-center">
       <h1
         className="mb-5"
-        style={{ fontFamily: "sans-serif", color: "#50CB93" }}
+        style={{ fontFamily: "sans-serif", color: "#276678" }}
       >
         Controle da escola RedePOS
       </h1>
@@ -15,21 +15,21 @@ function Home() {
         <button
           type="button"
           className="m-2 btn"
-          style={{ backgroundColor: "#ACFFAD", color: "#54436B" }}
+          style={{ backgroundColor: "#D3E0EA", color: "#276678" }}
         >
           Alunos
         </button>
         <button
           type="button"
           className="m-2 btn"
-          style={{ backgroundColor: "#ACFFAD", color: "#54436B" }}
+          style={{ backgroundColor: "#D3E0EA", color: "#276678" }}
         >
           Professores
         </button>
         <button
           type="button"
           className="m-2 btn"
-          style={{ backgroundColor: "#ACFFAD", color: "#54436B" }}
+          style={{ backgroundColor: "#D3E0EA", color: "#276678" }}
         >
           Salas
         </button>
