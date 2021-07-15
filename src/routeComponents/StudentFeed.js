@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-// import StudentCreate from "./StudentCreate";
+import StudentCreate from "./StudentCreate";
 import api from "../apis/index";
 
 function StudentFeed() {
@@ -19,12 +19,15 @@ function StudentFeed() {
   }, []);
 
   return (
-    <div className="column">
+    <div className="container text-center">
+      <StudentCreate />
+      <h1 style={{ fontFamily: "sans-serif", color: "#276678" }}>
+        Lista de Alunos e respectivos professores
+      </h1>
       <div>
-        <table className="table">
+        <table className="table table-striped table-bordered ">
           <thead>
             <tr>
-              <th>#</th>
               <th>Aluno</th>
               <th>Professor</th>
             </tr>
@@ -34,9 +37,8 @@ function StudentFeed() {
             {students.map((student) => {
               return (
                 <tr key={student._id}>
-                  <th scope="row">1</th>
-                  <td>Mark</td>
-                  <td>Otto</td>
+                  <td>{student.fullname}</td>
+                  <td>{student.teacher}</td>
                 </tr>
               );
             })}
