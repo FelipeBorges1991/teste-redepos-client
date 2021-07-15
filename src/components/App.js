@@ -4,10 +4,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import home from "../routeComponents/Home"
 
 function App() {
-  return <div className="container">
+  return <div style={{ backgroundColor: "#54436B" }}>
     <BrowserRouter>
       <Switch>
-        <Route path="/home" component={home}></Route>
+        <Route exact path="/home" component={home}></Route>
       </Switch>
     </BrowserRouter>
   </div>
