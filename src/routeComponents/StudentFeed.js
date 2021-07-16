@@ -38,7 +38,7 @@ function StudentFeed() {
               return (
                 <tr key={student._id}>
                   <td>{student.fullname}</td>
-                  <td>{student.teacher}</td>
+                  <td>{student.teacher.fullname}</td>
                 </tr>
               );
             })}

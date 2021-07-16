@@ -10,7 +10,7 @@ function Home() {
         Controle da escola RedePOS
       </h1>
       <div
-        className="btn-group btn-group-lg container"
+        className="btn-group btn-group-lg container d-flex justify-content-center"
         role="group"
         aria-label="Basic example"
       >
