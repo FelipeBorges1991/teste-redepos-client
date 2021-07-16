@@ -8,7 +8,7 @@ function StudentCreate() {
 
   const [state, setState] = useState({
     fullname: "",
-    teacher: "",
+    teacher: [],
   });
 
   function handleChange(event) {

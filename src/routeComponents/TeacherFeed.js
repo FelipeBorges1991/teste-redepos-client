@@ -35,12 +35,21 @@ function TeacherFeed() {
 
           <tbody>
             {teachers.map((teacher) => {
-              return (
-                <tr key={teacher._id}>
-                  <td>{teacher.fullname}</td>
-                  <td>{teacher.classroom}</td>
-                </tr>
-              );
+              if (teacher.classroom.length === 0) {
+                return (
+                  <tr key={teacher._id}>
+                    <td style={{ color: "#0000FF" }}>{teacher.fullname}</td>
+                    <td></td>
+                  </tr>
+                );
+              } else {
+                return (
+                  <tr key={teacher._id}>
+                    <td>{teacher.fullname}</td>
+                    <td>{teacher.classroom[0].classroom}</td>
+                  </tr>
+                );
+              }
             })}
           </tbody>
         </table>

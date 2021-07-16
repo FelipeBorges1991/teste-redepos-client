@@ -8,7 +8,7 @@ function ClassRoomCreate() {
 
   const [state, setState] = useState({
     classroom: "",
-    teachers: "",
+    teachers: [],
   });
 
   function handleChange(event) {

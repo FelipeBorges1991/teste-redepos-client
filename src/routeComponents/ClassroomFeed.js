@@ -35,12 +35,21 @@ function ClassRoomFeed() {
 
           <tbody>
             {classRooms.map((classroom) => {
-              return (
-                <tr key={classroom._id}>
-                  <td>{classroom.classroom}</td>
-                  <td>{classroom.teachers}</td>
-                </tr>
-              );
+              if (classroom.teachers.length === 0) {
+                return (
+                  <tr key={classroom._id}>
+                    <td>{classroom.classroom}</td>
+                    <td></td>
+                  </tr>
+                );
+              } else {
+                return (
+                  <tr key={classroom._id}>
+                    <td>{classroom.classroom}</td>
+                    <td>{classroom.teachers[0].fullname}</td>
+                  </tr>
+                );
+              }
             })}
           </tbody>
         </table>
